@@ -1,7 +1,7 @@
-describe('Main Page Tab', () => {
+describe('Main Page Verification', () => {
  
 
-  it('should check if all tabs are visible', () => {
+  it('should check if main page is present', () => {
     cy.visit('https://tapsshop.pl/');
 
     // check if logo exists

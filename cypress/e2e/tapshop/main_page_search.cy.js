@@ -1,7 +1,7 @@
-describe('Main Page Tab', () => {
+describe('Main Page Search', () => {
  
 
-    it('should check if all tabs are visible', () => {
+    it('should check if you are able to search within the page', () => {
       cy.visit('https://tapsshop.pl/');
   
       // check if search field exists
