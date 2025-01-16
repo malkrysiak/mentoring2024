@@ -14,13 +14,13 @@ describe('Main Page Tab', () => {
 
 
     // check if the tabs are clickable
-    cy.get('li:contains("Koszyk")').click()
+    cy.get('li:contains("Koszyk")').first().click()
     cy.get ("header h1:contains('Koszyk')").should("be.visible")
-    cy.get('li:contains("Moje konto")').click();
+    cy.get('li:contains("Moje konto")').first().click();
     cy.get ("header h1:contains('Moje konto')").should("be.visible")
-    cy.get('li:contains("Zamówienie")').click()
-    cy.get ("header h1:contains('Zamówienie')").should("be.visible")
-    cy.get('li:contains("Sklep")').click()
+    cy.get('li:contains("Zamówienie")').first().click()
+    cy.get ("header h1:contains('Koszyk')").should("be.visible")
+    cy.get('li:contains("Sklep")').first().click()
     cy.get ("header h1:contains('Sklep')").should("be.visible")
 
   });})
