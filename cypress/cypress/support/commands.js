@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("waitForIntercept", (alias, statusCode) => {
+  cy.wait(alias).then(({ response }) => {
+    expect(response.StatusCode).to.eq(200);
+  });
+});
